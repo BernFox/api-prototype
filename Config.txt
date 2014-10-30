@@ -1,0 +1,17 @@
+In the Settings.py file inside of the API directory that is found inside of the root folder, 
+we want to manipulate a few configurations so that things jive alright in the 
+Development and Production environments.  
+
+There are a few variables that one could change to ensure environment functionality/security.
+
+Development
+	DEBUG = True
+	ADMIN_ENABLED = False	
+
+Production
+	DEBUG = False
+	ADMIN_ENABLED = False	
+
+Lastly, ensure that database_config.example is in the API directory. This houses all the 
+credentials for database connections for the entire API.
+	
